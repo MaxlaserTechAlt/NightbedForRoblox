@@ -2812,9 +2812,9 @@ function kavo:load()
 			end;
 		end;
 	end);
-	configloaded = true;
 	if not suc then
 		task.spawn(error, res);
+		configloaded = true;
 	end;
 end
 task.spawn(function()
